@@ -24,19 +24,32 @@ document.getElementById('play').addEventListener("click", function(e) {
   Soundfont.instrument(ctx, 'acoustic_grand_piano').then(function(instrument) {
   	 // Twinkle Twinkle Little Star (start of)
     var time = ctx.currentTime;
-    instrument.play('E4', time).stop(ctx.currentTime + 0.2);
-    instrument.play('D4', time+0.2).stop(ctx.currentTime + 0.4);
-    instrument.play('C4', time+0.4).stop(ctx.currentTime + 0.6);
-    instrument.play('D4', time+0.6).stop(ctx.currentTime + 0.8);
-    instrument.play('E4', time+0.8).stop(ctx.currentTime + 1.0);
-    instrument.play('E4', time+1.0).stop(ctx.currentTime + 1.2);
-    instrument.play('E4', time+1.2).stop(ctx.currentTime + 1.6);
-    instrument.play('D4', time+1.6).stop(ctx.currentTime + 1.8);
-    instrument.play('D4', time+1.8).stop(ctx.currentTime + 2.0);
-    instrument.play('D4', time+2.0).stop(ctx.currentTime + 2.4);
-    instrument.play('E4', time+2.4).stop(ctx.currentTime + 2.6);
-    instrument.play('G4', time+2.6).stop(ctx.currentTime + 2.8);
-    instrument.play('G4', time+2.8).stop(ctx.currentTime + 3.2);
+    instrument.play('E4', time).stop(time + 0.2);
+    instrument.play('D4', time+0.2).stop(time + 0.4);
+    instrument.play('C4', time+0.4).stop(time + 0.6);
+    instrument.play('D4', time+0.6).stop(time + 0.8);
+    instrument.play('E4', time+0.8).stop(time + 1.0);
+    instrument.play('E4', time+1.0).stop(time + 1.2);
+    instrument.play('E4', time+1.2).stop(time + 1.6);
+    instrument.play('D4', time+1.6).stop(time + 1.8);
+    instrument.play('D4', time+1.8).stop(time + 2.0);
+    instrument.play('D4', time+2.0).stop(time + 2.4);
+    instrument.play('E4', time+2.4).stop(time + 2.6);
+    instrument.play('G4', time+2.6).stop(time + 2.8);
+    instrument.play('G4', time+2.8).stop(time + 3.2);
+    instrument.play('E4', time+3.2).stop(time + 3.4);
+    instrument.play('D4', time+3.4).stop(time + 3.6);
+    instrument.play('C4', time+3.6).stop(time + 3.8);
+    instrument.play('D4', time+3.8).stop(time + 4.0);
+    instrument.play('E4', time+4.0).stop(time + 4.2);
+    instrument.play('E4', time+4.2).stop(time + 4.4);
+    instrument.play('E4', time+4.4).stop(time + 4.6);
+    instrument.play('E4', time+4.6).stop(time + 4.8);
+    instrument.play('D4', time+4.8).stop(time + 5.0);
+    instrument.play('D4', time+5.0).stop(time + 5.2);
+    instrument.play('E4', time+5.2).stop(time + 5.4);
+    instrument.play('D4', time+5.4).stop(time + 5.6);
+    instrument.play('C4', time+5.6).stop(time + 6.4);
   });
 });
 </script>
