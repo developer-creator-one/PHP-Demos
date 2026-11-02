@@ -1,1 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Music1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+</head><body>
+
+<h1>Music1</h1>
+
+<p>
+<button id="play">Play</button>
+</p>
+
+<!--
+https://danigb.github.io/soundfont-player/
+https://github.com/danigb/soundfont-player
+-->
+<script type="text/javascript" src="soundfont-player.min.js"></script>
+
+<script type="text/javascript">
+document.getElementById('play').addEventListener("click", function(e) {
+  var ctx = new AudioContext();
+  Soundfont.instrument(ctx, 'acoustic_grand_piano').then(function(instrument) {
+    var time = ctx.currentTime;
+    instrument.play('E4', time).stop(ctx.currentTime + 0.2);
+    instrument.play('D4', time+0.2).stop(ctx.currentTime + 0.4);
+    instrument.play('C4', time+0.4).stop(ctx.currentTime + 0.6);
+    instrument.play('D4', time+0.6).stop(ctx.currentTime + 0.8);
+    instrument.play('E4', time+0.8).stop(ctx.currentTime + 1.0);
+    instrument.play('E4', time+1.0).stop(ctx.currentTime + 1.2);
+    instrument.play('E4', time+1.2).stop(ctx.currentTime + 1.6);
+    instrument.play('D4', time+1.6).stop(ctx.currentTime + 1.8);
+    instrument.play('D4', time+1.8).stop(ctx.currentTime + 2.0);
+    instrument.play('D4', time+2.0).stop(ctx.currentTime + 2.4);
+    instrument.play('E4', time+2.4).stop(ctx.currentTime + 2.6);
+    instrument.play('G4', time+2.6).stop(ctx.currentTime + 2.8);
+    instrument.play('G4', time+2.8).stop(ctx.currentTime + 3.2);
+  });
+});
+</script>
+
+<h2>Source code of this page</h2>
+<?php
+highlight_file(__FILE__);
+?>
+
+</body></html>
+
+<!--
+http://localhost/Music1.php
+-->
+
 
