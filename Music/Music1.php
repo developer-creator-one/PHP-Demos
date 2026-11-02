@@ -22,6 +22,7 @@ https://github.com/danigb/soundfont-player
 document.getElementById('play').addEventListener("click", function(e) {
   var ctx = new AudioContext();
   Soundfont.instrument(ctx, 'acoustic_grand_piano').then(function(instrument) {
+  	 // Twinkle Twinkle Little Star (start of)
     var time = ctx.currentTime;
     instrument.play('E4', time).stop(ctx.currentTime + 0.2);
     instrument.play('D4', time+0.2).stop(ctx.currentTime + 0.4);
